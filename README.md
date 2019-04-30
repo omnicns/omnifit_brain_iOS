@@ -63,88 +63,89 @@
       * 2 인스턴스 생성       : var omnifitBrain : OmnifitBrain = OmnifitBrain()
       * 3 델리게이트 등록      : omnifitBrain.delegate = self
       * 4 델리게이트 함수 등록  : 
-```swift
-extension ViewController : protocolOmnifitBrain{
+      ```swift  
+   
+        extension ViewController : protocolOmnifitBrain{
   
-  //신호안정화 상태(안정화 상태에서 받은 데이터만 신뢰할수 있는 데이터로 취급)  
-  //측정 데이터는 2초 간격으로 콜백
-  func protocolMeasurementDataEvent(measureData: [Double]) {
-  }
+        //신호안정화 상태(안정화 상태에서 받은 데이터만 신뢰할수 있는 데이터로 취급)  
+        //측정 데이터는 2초 간격으로 콜백
+        func protocolMeasurementDataEvent(measureData: [Double]) {
+        }
   
-  //측정 시간 상태 변화 
-  func protocolTimeChangeEvent(remainingTime: Int) {
-  }
+        //측정 시간 상태 변화 
+        func protocolTimeChangeEvent(remainingTime: Int) {
+        }
  
-  //베터리 변화
-  func protocolBatteryChangeEvent(batteryLevel : Int) {
-  }
-  func protocolBatteryChangeEventLow(batteryLevel : Int) {
-  }
+        //베터리 변화
+        func protocolBatteryChangeEvent(batteryLevel : Int) {
+        }
+        func protocolBatteryChangeEventLow(batteryLevel : Int) {
+        }
     
-  //장치 상태 변화
-  func protocolDeviceEvent(state: ConnectionStatus) {
-      findList()
-      switch state {
-          case .CONNECTION_START:
-          case .CONNECTED:
-          case .ALREADY_CONNECTED:
-          case .CONNECTION_COMPLETED:
-          case .CONNECTION_FAILED:
-          case .DISCONNECTED:
-          case .INTENDED_DISCONNECTED:
-      }
-   }
+        //장치 상태 변화
+        func protocolDeviceEvent(state: ConnectionStatus) {
+           findList()
+           switch state {
+              case .CONNECTION_START:
+              case .CONNECTED:
+              case .ALREADY_CONNECTED:
+              case .CONNECTION_COMPLETED:
+              case .CONNECTION_FAILED:
+              case .DISCONNECTED:
+              case .INTENDED_DISCONNECTED:
+          }
+        }
  
-   //헤드셋 써치 이벤트 **/
-   func protocolHeadsetScanEvent(state: ScanState) {
-       switch state {
-          case .START:
-          case .FOUND:
-          case .FINISHED:
-          case .FAILED:
-       }
-   }
+        //헤드셋 써치 이벤트 **/
+        func protocolHeadsetScanEvent(state: ScanState) {
+          switch state {
+            case .START:
+            case .FOUND:
+            case .FINISHED:
+            case .FAILED:
+          }  
+        }
     
-   //측정 상태 변화
-   func protocolMeasurementEvent(status: MeasurementState) {
-      switch status {
-          case .STARTED:
-          case .CANCELED:
-          case .FORCE_STOP:
-          case .COMPLETE:
-          case .FAILED:
-          case .ANALYSING:
-          case .RESTARTED:
-          case .REQUEST_START:
-          case .REQUEST_STOP:
-          case .STOPED:
-      }
-   }
+        //측정 상태 변화
+        func protocolMeasurementEvent(status: MeasurementState) {
+          switch status {
+            case .STARTED:
+            case .CANCELED:
+            case .FORCE_STOP:
+            case .COMPLETE:
+            case .FAILED:
+            case .ANALYSING:
+            case .RESTARTED:
+            case .REQUEST_START:
+            case .REQUEST_STOP:
+            case .STOPED:
+          }
+        }
     
-   //착용 상태 변화
-   func protocolWearingEvent(portion: ElectrodePortion) {
-      switch portion {
-          case .ATTACHED:
-          case .DETACHED_ALL:
-          case .L_FOREHEAD:
-          case .R_FOREHEAD:
-          case .L_EAR:
-          case .R_EAR:
-          case .UNKNOWN:
-              break
+        //착용 상태 변화
+        func protocolWearingEvent(portion: ElectrodePortion) {
+          switch portion {
+            case .ATTACHED:
+            case .DETACHED_ALL:
+            case .L_FOREHEAD:
+            case .R_FOREHEAD:
+            case .L_EAR:
+            case .R_EAR:
+            case .UNKNOWN:
+                break
+          }
+        }     
       }
-   }    
-}
-``` 
+      ``` 
 
 ## 함수 목록 및 설명
 
   - 장치 찾기
-    + 함수명 : doFindDevice(scanTime: "스캔 시간”)
+    + 함수명 : `doFindDevice(scanTime: "스캔 시간”)`
     + 입력  : scanTime: "스캔 시간”
     + 출력  : protocolHeadsetScanEvent(state: ScanState) 으로 응답
   - 장치 연결
-    + 함수명 : doConnectHeadset() , doConnectHeadset(PeripheralName: “해당 기기의 이름 ex> OCW-H20 "XXXX” )
+    + 함수명 : `doConnectHeadset() , doConnectHeadset(PeripheralName: “해당 기기의 이름 ex> OCW-H20 "XXXX” )`
     + 입력  : 없을 경우 - 겁색된 Omnifit 헤드셋 리스트 중 신호 세기가 가장 센 기기를 우선적으로 자동 연결 됨  
              있을 경우 - PeripheralName: "해당 기기의 이름 ex> OCW-H20 XXXX”와 같이 입력되는 장치 명의 기기가 연결 됨  
     + 출력  : 아래와 같이 다중의 델리게이트 함수로 발생되는 이벤트의 값이 응답 됨  
@@ -153,7 +154,7 @@ extension ViewController : protocolOmnifitBrain{
              protocolBatteryChangeEvent(batteryLevel : Int).   - 15% 이상의 베터리 레벨  
              protocolBatteryChangeEventLow(batteryLevel : Int) - 15% 이하의 베터리 레벨  
   - 뇌파 측정 시작
-    + 함수명 : doStartMeasure(measureTime: “측정시간", isOpenEye: “뜬 눈 or 감은 눈”)  
+    + 함수명 : `doStartMeasure(measureTime: “측정시간", isOpenEye: “뜬 눈 or 감은 눈”)` 
     + 입력  :  
       * measureTime :  
         0 일 경우 - 제한 없는 연속 측정  
@@ -165,19 +166,19 @@ extension ViewController : protocolOmnifitBrain{
         protocolMeasurementDataEvent(measureData: [Double]). - 측정된 뇌파값 배열  
         protocolTimeChangeEvent(remainingTime: Int)          - 측정 경과 시간 응답
   - 장치 연결 해제  
-    + 함수명 : doDisconnectHeadset()
+    + 함수명 : `doDisconnectHeadset()`
     + 입력  : 없음  
     + 출력  : 장치 연결 의 응답과 같은 함수로 응답됨
   - 뇌파 측정 종료
-    + 함수명 : doStopMeasure()
+    + 함수명 : `doStopMeasure()`
     + 입력  : 없음
     + 출력  : 뇌파 측정 시작 의 응답과 같은 함수로 응답
   - 자원 해제  
-    + 함수명 : doClose()
+    + 함수명 : `doClose()`
     + 입력  : 없음
     + 출력  : 장치 연결 , 뇌파 측정 시작 의 응답과 같은 함수로 응답
   - 스캔된 장치 리스트 출력  
-    + 함수명 : getScannedPeripheralList()
+    + 함수명 : `getScannedPeripheralList()`
     + 입력  : 없음
     + 출력  : 함수의 리턴 값으로 출력  
     ```swift
