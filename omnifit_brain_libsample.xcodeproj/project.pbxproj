@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91F8B2132277EBD400345902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8B2122277EBD400345902 /* AppDelegate.swift */; };
+		91F8B2152277EBD400345902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F8B2142277EBD400345902 /* ViewController.swift */; };
+		91F8B2182277EBD400345902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F8B2162277EBD400345902 /* Main.storyboard */; };
+		91F8B21A2277EBD500345902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F8B2192277EBD500345902 /* Assets.xcassets */; };
+		91F8B21D2277EBD500345902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F8B21B2277EBD500345902 /* LaunchScreen.storyboard */; };
+		91F8B23D2277EC3000345902 /* lib_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B23A2277EC1F00345902 /* lib_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91F8B23F2277EC3000345902 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B2282277EBFF00345902 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91F8B2412277EC3000345902 /* ObjcExceptionBridging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B22D2277EC0000345902 /* ObjcExceptionBridging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91F8B2432277EC3000345902 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B2292277EC0000345902 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91F8B2452277EC3000345902 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B2262277EBFF00345902 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91F8B2472277EC3000345902 /* RxAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B2272277EBFF00345902 /* RxAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91F8B2492277EC3000345902 /* RxAtomic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B2252277EBFF00345902 /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91F8B24B2277EC3000345902 /* RxBluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B22A2277EC0000345902 /* RxBluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91F8B24D2277EC3000345902 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B22B2277EC0000345902 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91F8B24F2277EC3000345902 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B22C2277EC0000345902 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91F8B2512277EC3000345902 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91F8B22E2277EC0000345902 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF2A285E646C21216274604B /* Pods_omnifit_brain_libsample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39733F0BE9DFDF67A4EDD04 /* Pods_omnifit_brain_libsample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91F8B2522277EC3000345902 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				91F8B24F2277EC3000345902 /* RxSwift.framework in Embed Frameworks */,
+				91F8B24D2277EC3000345902 /* RxCocoa.framework in Embed Frameworks */,
+				91F8B2432277EC3000345902 /* Realm.framework in Embed Frameworks */,
+				91F8B2452277EC3000345902 /* RealmSwift.framework in Embed Frameworks */,
+				91F8B23D2277EC3000345902 /* lib_sdk.framework in Embed Frameworks */,
+				91F8B23F2277EC3000345902 /* Alamofire.framework in Embed Frameworks */,
+				91F8B24B2277EC3000345902 /* RxBluetoothKit.framework in Embed Frameworks */,
+				91F8B2492277EC3000345902 /* RxAtomic.framework in Embed Frameworks */,
+				91F8B2512277EC3000345902 /* XCGLogger.framework in Embed Frameworks */,
+				91F8B2412277EC3000345902 /* ObjcExceptionBridging.framework in Embed Frameworks */,
+				91F8B2472277EC3000345902 /* RxAlamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6B3BA794B99570903A5A46C0 /* Pods-omnifit_brain_libsample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-omnifit_brain_libsample.release.xcconfig"; path = "Pods/Target Support Files/Pods-omnifit_brain_libsample/Pods-omnifit_brain_libsample.release.xcconfig"; sourceTree = "<group>"; };
+		91F8B20F2277EBD400345902 /* omnifit_brain_libsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = omnifit_brain_libsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F8B2122277EBD400345902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91F8B2142277EBD400345902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91F8B2172277EBD400345902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91F8B2192277EBD500345902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91F8B21C2277EBD500345902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91F8B21E2277EBD500345902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F8B2252277EBFF00345902 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = "<group>"; };
+		91F8B2262277EBFF00345902 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		91F8B2272277EBFF00345902 /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxAlamofire.framework; sourceTree = "<group>"; };
+		91F8B2282277EBFF00345902 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		91F8B2292277EC0000345902 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		91F8B22A2277EC0000345902 /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBluetoothKit.framework; sourceTree = "<group>"; };
+		91F8B22B2277EC0000345902 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
+		91F8B22C2277EC0000345902 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
+		91F8B22D2277EC0000345902 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjcExceptionBridging.framework; sourceTree = "<group>"; };
+		91F8B22E2277EC0000345902 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCGLogger.framework; sourceTree = "<group>"; };
+		91F8B23A2277EC1F00345902 /* lib_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lib_sdk.framework; sourceTree = "<group>"; };
+		D2536946D1EFAAAB4542E511 /* Pods-omnifit_brain_libsample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-omnifit_brain_libsample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-omnifit_brain_libsample/Pods-omnifit_brain_libsample.debug.xcconfig"; sourceTree = "<group>"; };
+		E39733F0BE9DFDF67A4EDD04 /* Pods_omnifit_brain_libsample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_omnifit_brain_libsample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91F8B20C2277EBD400345902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2A285E646C21216274604B /* Pods_omnifit_brain_libsample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22EE9BC3DAE6AD20D349A785 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2536946D1EFAAAB4542E511 /* Pods-omnifit_brain_libsample.debug.xcconfig */,
+				6B3BA794B99570903A5A46C0 /* Pods-omnifit_brain_libsample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		91F8B2062277EBD300345902 = {
+			isa = PBXGroup;
+			children = (
+				91F8B2112277EBD400345902 /* omnifit_brain_libsample */,
+				91F8B2102277EBD400345902 /* Products */,
+				22EE9BC3DAE6AD20D349A785 /* Pods */,
+				DD4C2A5A01D1B701D6E19826 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91F8B2102277EBD400345902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91F8B20F2277EBD400345902 /* omnifit_brain_libsample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91F8B2112277EBD400345902 /* omnifit_brain_libsample */ = {
+			isa = PBXGroup;
+			children = (
+				91F8B2392277EC1000345902 /* OmniLib */,
+				91F8B2242277EBF000345902 /* Frameworks */,
+				91F8B2122277EBD400345902 /* AppDelegate.swift */,
+				91F8B2142277EBD400345902 /* ViewController.swift */,
+				91F8B2162277EBD400345902 /* Main.storyboard */,
+				91F8B2192277EBD500345902 /* Assets.xcassets */,
+				91F8B21B2277EBD500345902 /* LaunchScreen.storyboard */,
+				91F8B21E2277EBD500345902 /* Info.plist */,
+			);
+			path = omnifit_brain_libsample;
+			sourceTree = "<group>";
+		};
+		91F8B2242277EBF000345902 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91F8B2282277EBFF00345902 /* Alamofire.framework */,
+				91F8B22D2277EC0000345902 /* ObjcExceptionBridging.framework */,
+				91F8B2292277EC0000345902 /* Realm.framework */,
+				91F8B2262277EBFF00345902 /* RealmSwift.framework */,
+				91F8B2272277EBFF00345902 /* RxAlamofire.framework */,
+				91F8B2252277EBFF00345902 /* RxAtomic.framework */,
+				91F8B22A2277EC0000345902 /* RxBluetoothKit.framework */,
+				91F8B22B2277EC0000345902 /* RxCocoa.framework */,
+				91F8B22C2277EC0000345902 /* RxSwift.framework */,
+				91F8B22E2277EC0000345902 /* XCGLogger.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		91F8B2392277EC1000345902 /* OmniLib */ = {
+			isa = PBXGroup;
+			children = (
+				91F8B23A2277EC1F00345902 /* lib_sdk.framework */,
+			);
+			path = OmniLib;
+			sourceTree = "<group>";
+		};
+		DD4C2A5A01D1B701D6E19826 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E39733F0BE9DFDF67A4EDD04 /* Pods_omnifit_brain_libsample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91F8B20E2277EBD400345902 /* omnifit_brain_libsample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91F8B2212277EBD500345902 /* Build configuration list for PBXNativeTarget "omnifit_brain_libsample" */;
+			buildPhases = (
+				1D7D1E573A68ABF4B101EF84 /* [CP] Check Pods Manifest.lock */,
+				91F8B20B2277EBD400345902 /* Sources */,
+				91F8B20C2277EBD400345902 /* Frameworks */,
+				91F8B20D2277EBD400345902 /* Resources */,
+				91F8B2522277EC3000345902 /* Embed Frameworks */,
+				64C84923EB49D53B1822DECB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = omnifit_brain_libsample;
+			productName = omnifit_brain_libsample;
+			productReference = 91F8B20F2277EBD400345902 /* omnifit_brain_libsample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91F8B2072277EBD300345902 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "한광식";
+				TargetAttributes = {
+					91F8B20E2277EBD400345902 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 91F8B20A2277EBD300345902 /* Build configuration list for PBXProject "omnifit_brain_libsample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91F8B2062277EBD300345902;
+			productRefGroup = 91F8B2102277EBD400345902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91F8B20E2277EBD400345902 /* omnifit_brain_libsample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91F8B20D2277EBD400345902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F8B21D2277EBD500345902 /* LaunchScreen.storyboard in Resources */,
+				91F8B21A2277EBD500345902 /* Assets.xcassets in Resources */,
+				91F8B2182277EBD400345902 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D7D1E573A68ABF4B101EF84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-omnifit_brain_libsample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64C84923EB49D53B1822DECB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-omnifit_brain_libsample/Pods-omnifit_brain_libsample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-omnifit_brain_libsample/Pods-omnifit_brain_libsample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91F8B20B2277EBD400345902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F8B2152277EBD400345902 /* ViewController.swift in Sources */,
+				91F8B2132277EBD400345902 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		91F8B2162277EBD400345902 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91F8B2172277EBD400345902 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91F8B21B2277EBD500345902 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91F8B21C2277EBD500345902 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91F8B21F2277EBD500345902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91F8B2202277EBD500345902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91F8B2222277EBD500345902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2536946D1EFAAAB4542E511 /* Pods-omnifit_brain_libsample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74C7J4KTMM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/omnifit_brain_libsample/Frameworks",
+					"$(PROJECT_DIR)/omnifit_brain_libsample/OmniLib",
+				);
+				INFOPLIST_FILE = omnifit_brain_libsample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "omnifit.brain.omnifit-brain-libsample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91F8B2232277EBD500345902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B3BA794B99570903A5A46C0 /* Pods-omnifit_brain_libsample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74C7J4KTMM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/omnifit_brain_libsample/Frameworks",
+					"$(PROJECT_DIR)/omnifit_brain_libsample/OmniLib",
+				);
+				INFOPLIST_FILE = omnifit_brain_libsample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "omnifit.brain.omnifit-brain-libsample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91F8B20A2277EBD300345902 /* Build configuration list for PBXProject "omnifit_brain_libsample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F8B21F2277EBD500345902 /* Debug */,
+				91F8B2202277EBD500345902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91F8B2212277EBD500345902 /* Build configuration list for PBXNativeTarget "omnifit_brain_libsample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F8B2222277EBD500345902 /* Debug */,
+				91F8B2232277EBD500345902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91F8B2072277EBD300345902 /* Project object */;
+}

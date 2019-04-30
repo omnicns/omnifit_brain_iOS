@@ -1,0 +1,11 @@
+framework module RxBluetoothKit {
+  umbrella header "RxBluetoothKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module RxBluetoothKit.Swift {
+    header "RxBluetoothKit-Swift.h"
+    requires objc
+}
