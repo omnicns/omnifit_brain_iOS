@@ -196,6 +196,7 @@ extension ViewController : protocolOmnifitBrain{
     ```
 ## 라이센스
 
-라이센스를 명시하고 디렉터리에 `LICENSE`를 포함시킨다.  예) MIT License © Lulin Pollux
+Apache License 2.0
+
 
   
