@@ -29,7 +29,8 @@ This library is intended to help you create apps that can be serviced using devi
 ## Installation instructions and how to use the library
 
 - Ready
-   + 1 Creates and closes project
+   
+   + 1 Creates and closes project
    + 2 Add a default library
       * lib_sdk.framework file 
       (OmniLib directory in the provided project is called "Generated Project" -> General -> Embedded Binaries
