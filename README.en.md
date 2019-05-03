@@ -15,15 +15,15 @@ This library is intended to help you create apps that can be serviced using devi
   + Devices            : Universal
 - Version: 0.5
 - Library used
-   + Alamofire: 4.8.0
-   + RxAlamofire: 4.3.0
-   + Realm: 3.13.0
-   + RealmSwift: 3.13.0
-   + RxAtomic: 4.4.0
-   + RxBluetoothKit: 4.0.2
-   + RxCocoa: 4.4.0
-   + RxSwift: 4.4.0
-   + XCGLogger: 6.0.4
+  + Alamofire       : 4.8.0  
+  + RxAlamofire     : 4.3.0  
+  + Realm           : 3.13.0  
+  + RealmSwift      : 3.13.0  
+  + RxAtomic        : 4.4.0  
+  + RxBluetoothKit  : 4.0.2  
+  + RxCocoa         : 4.4.0  
+  + RxSwift         : 4.4.0  
+  + XCGLogger       : 6.0.4
 
 
 ## Installation instructions and how to use the library
