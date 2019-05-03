@@ -12,6 +12,7 @@ This library is intended to help you create apps that can be serviced using devi
 - File name: lib_sdk.framework
 - Deployment Info
    + Deploryment Target: 10.0
+   
    + Devices: Universal
 - Version: 0.5
 - Library used
