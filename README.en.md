@@ -10,11 +10,9 @@ This library is intended to help you create apps that can be serviced using devi
 - File type: framework
 - Program language used: swift 4.2
 - File name: lib_sdk.framework
-- Deployment Info
-
-   + Deploryment Target: 10.0
-   
-   + Devices: Universal
+- Deployment Info  
+  + Deploryment Target : 10.0  
+  + Devices            : Universal
 - Version: 0.5
 - Library used
    + Alamofire: 4.8.0
