@@ -1,5 +1,4 @@
-# omnifit_brain_iOS
-> Read this in other languages: [한국어](README.md), [ENGLISH](README.en.md)
+# omnifit_brain_iOS    > Read this in other languages: [한국어](README.md), [ENGLISH](README.en.md)
 
 > INTRO
 
