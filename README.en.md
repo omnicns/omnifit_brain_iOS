@@ -35,7 +35,7 @@ This library is intended to help you create apps that can be serviced using devi
          Add by dragging
   + 3 Add other associated libraries 
       * Method 1: Copy the supplied library (the Frameworks directory within the provided project) to a new project and add it as                         described in the "Adding a default library" instruction.
-      * Method 2: Adding with Pod
+      * Method 2: Add Using Pod
                 1 Open Terminal and navigate to the project directory and type sudo gem install cocoa pods
                 2 After entering pod init, use ls command to check file list of directory (Podfile is created).
                 3 vi Podfile (edit) Edit as follows.
