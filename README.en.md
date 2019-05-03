@@ -30,12 +30,11 @@ This library is intended to help you create apps that can be serviced using devi
 
 - Ready
   + 1 Creates and closes project
-  + 2 Add a default library
+  + 2 Add a default library
       * lib_sdk.framework file (OmniLib directory in the provided project is called "Generated Project" -> General -> Embedded Binaries
          Add by dragging
   + 3 Add other associated libraries 
-      * Method 1: Copy the supplied library (Frameworks directory within the provided project) into a new project and add
-                Add as a method  
+      * Method 1: Copy the supplied library (the Frameworks directory within the provided project) to a new project and add it as                         described in the "Adding a default library" instruction.
       * Method 2: Adding with Pod
                 1 Open Terminal and navigate to the project directory and type sudo gem install cocoa pods
                 2 After entering pod init, use ls command to check file list of directory (Podfile is created).
