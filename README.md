@@ -162,7 +162,7 @@
         0 이상의 정수 - 정수의 단위는 초 단위 이며, 입력된 시간만큼 뇌파를 측정  
       * isOpenEye   :  
         true  - 뜬 눈 (개안) 상태의 뇌파 측정 값을 응답  
-        False - 감은 눈 (패안) 상태의 뇌파 측정 값을 응답
+        False - 감은 눈 (안) 상태의 뇌파 측정 값을 응답
     + 출력  :  
         protocolMeasurementDataEvent(measureData: [Double]). - 측정된 뇌파값 배열  
         protocolTimeChangeEvent(remainingTime: Int)          - 측정 경과 시간 응답
